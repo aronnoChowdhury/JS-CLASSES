@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Conditions</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <h1 id="top" class="text-center text-xl font-bold p-4 m-4"></h1>
+    <p id="true"></p>
+    <p id="flase"></p>
+    <p id="s1"></p>
+    <p id="s2"></p>
+    <p id="s3"></p>
+    <p id="s4"></p>
+</body>
+<script>
+    document.getElementById("top").innerHTML = "JavaScript Conditions";
+
+    let num = 30;
+    if (num>20){
+        console.log ("It's True");
+    }
+    else{
+        console.log("It's False");
+    }
+
+    let num1 = 40;
+    if (num1>20){
+        document.getElementById("true").innerHTML = "The Number is True";
+    }
+    else{
+        document.getElementById("false").innerHTML = "The Number is False";
+    }
+
+    //switch statement
+
+let person = "Mahir";
+
+switch (person) {
+  case "abir":
+    document.getElementById("s1").innerHTML = "70%";
+    break;
+  case "Sojib":
+    document.getElementById("s2").innerHTML = "50%";
+    break;
+  case "Nibir":
+    document.getElementById("s3").innerHTML = "60%";
+    break
+  default:
+    document.getElementById("s4").innerHTML = "Unknown Person";
+}
+
+//Pass or Fail
+let marks = 56;
+
+if (marks >= 80) {
+  console.log("grade is A+");
+} else if (marks >= 70) {
+  console.log("grade is A");
+} else if (marks >= 60) {
+  console.log("grade is A-");
+} else if (marks >= 33 && marks <= 59) {
+  console.log("passed");
+} else {
+  console.log("failed");
+  
+}
+
+    
+
+</script>
+</html>

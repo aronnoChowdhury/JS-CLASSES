@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+    <h1>JavaScript Functions</h1>
+</body>
+
+<script>
+    //CallBack Function Task
+    function checkAmount(amount,cb){
+        if(amount > 500 && amount < 1000){
+            cb(amount);
+        }
+        else{
+            console.log(`It will do a Simple Log`);
+        }
+    }
+
+    function handleAmount(amount){
+        console.log(`Callback call with amount:`, amount);
+    }
+    checkAmount(1000, handleAmount); 
+
+    // Arrow function
+
+const addition = (x, y) => {
+  return x + y;
+}
+console.log(addition(10, 20));
+
+// Recursive function
+
+function countDown(num) {
+  if (num === 2) {
+    console.log(num);
+    console.log('done');
+    return
+  }
+    
+  console.log(num);
+  countDown(num - 2);
+  
+}
+countDown(20);
+</script>
+</html>
